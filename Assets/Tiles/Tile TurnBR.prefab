@@ -12,10 +12,15 @@ PrefabInstance:
       propertyPath: m_text
       value: 7,0
       objectReference: {fileID: 0}
+    - target: {fileID: 2128374019467963014, guid: c3c6aa78722085947b751fd1a5d6d217,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3990407104918213661, guid: c3c6aa78722085947b751fd1a5d6d217,
         type: 3}
       propertyPath: m_Name
-      value: (7,0)
+      value: Tile TurnBR
       objectReference: {fileID: 0}
     - target: {fileID: 4351565614197214167, guid: c3c6aa78722085947b751fd1a5d6d217,
         type: 3}
