@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 70005578}
   m_Layer: 0
   m_Name: Path
-  m_TagString: Untagged
+  m_TagString: Path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2434,16 +2434,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042968104064141447, guid: d17f8a9e5b8fae641b3ca72fb368c324,
-        type: 3}
-      propertyPath: speed
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042968104064141447, guid: d17f8a9e5b8fae641b3ca72fb368c324,
-        type: 3}
-      propertyPath: path.Array.size
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2042968104064141447, guid: d17f8a9e5b8fae641b3ca72fb368c324,
         type: 3}

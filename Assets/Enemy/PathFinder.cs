@@ -8,10 +8,29 @@ public class PathFinder : MonoBehaviour
     [SerializeField] [Range(0,5)] float speed = 1;
     void Start()
     {
-        StartCoroutine(DrawPath());
+
+        DrawPath();
+        MoveToStart();
+
+        StartCoroutine(FollowPath());
     }
 
-    IEnumerator DrawPath()
+    void MoveToStart()
+    {
+        transform.position = path[0].transform.position;
+    }
+
+    void DrawPath()
+    {
+        path.Clear();
+        GameObject waypoints = GameObject.FindGameObjectWithTag("Path");
+        foreach (Transform child in waypoints.transform)
+        {
+            path.Add(child.GetComponent<Waypoint>());
+        }
+    }
+
+    IEnumerator FollowPath()
     {
         foreach(Waypoint waypoint in path){
 
@@ -28,6 +47,7 @@ public class PathFinder : MonoBehaviour
             }
 
         }
+        Destroy(gameObject);
 
     }
 }
