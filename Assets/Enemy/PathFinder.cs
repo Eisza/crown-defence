@@ -6,7 +6,7 @@ public class PathFinder : MonoBehaviour
 {
     [SerializeField] List<Waypoint> path = new List<Waypoint>();
     [SerializeField] [Range(0,5)] float speed = 1;
-    void Start()
+    void OnEnable()
     {
 
         DrawPath();
@@ -47,7 +47,7 @@ public class PathFinder : MonoBehaviour
             }
 
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
 
     }
 }

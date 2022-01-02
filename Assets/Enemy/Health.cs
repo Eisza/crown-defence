@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int maxHealth = 5;
     [SerializeField] int currentHealth;
-    void Start()
+    void OnEnable()
     {
         currentHealth = maxHealth;
     }
@@ -22,7 +22,7 @@ public class Health : MonoBehaviour
     {
         currentHealth -= 1;
         if(currentHealth <= 0){
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
