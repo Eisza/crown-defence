@@ -5012,3 +5012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03329f3bcc0e0ea47851c036a235004f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turret: {fileID: 6440397992274357977}
+  bolts: {fileID: 3235121642364996298}
+  range: 15
