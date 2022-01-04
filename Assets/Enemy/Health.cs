@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    Enemy enemyScript;
     [SerializeField] int maxHealth = 5;
     [SerializeField] int currentHealth;
     void OnEnable()
     {
         currentHealth = maxHealth;
+        enemyScript = FindObjectOfType<Enemy>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class Health : MonoBehaviour
         currentHealth -= 1;
         if(currentHealth <= 0){
             gameObject.SetActive(false);
+            enemyScript.Reward();
         }
     }
 }

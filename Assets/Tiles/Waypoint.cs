@@ -1,23 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Waypoint : MonoBehaviour
 {
     [SerializeField] bool isPlaceable;
     public bool IsPlaceable { get{return isPlaceable;}}
-    [SerializeField] GameObject tower;
+    [SerializeField] Tower tower;
 
-    void OnMouseDown(){
-        if(isPlaceable){
-            Instantiate(tower, transform.position , Quaternion.identity);
-            isPlaceable = false;
-        }
-    }
     
     void Start()
     {
-        
+    
+    }
+    void OnMouseDown(){
+        if(isPlaceable){
+            isPlaceable = !tower.BuildTower(this.transform.position);
+        }
     }
 
     // Update is called once per frame

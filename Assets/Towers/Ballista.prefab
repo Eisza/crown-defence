@@ -4977,6 +4977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6382618874585762068}
   - component: {fileID: -4360337858834367427}
+  - component: {fileID: 5776360720819667652}
   m_Layer: 0
   m_Name: Ballista
   m_TagString: Untagged
@@ -5015,3 +5016,15 @@ MonoBehaviour:
   turret: {fileID: 6440397992274357977}
   bolts: {fileID: 3235121642364996298}
   range: 15
+--- !u!114 &5776360720819667652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804656609071985075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb6d0cd8e6f6984c9896804cb79345a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

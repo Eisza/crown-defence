@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PathFinder : MonoBehaviour
 {
+    Enemy enemyScript;
     [SerializeField] List<Waypoint> path = new List<Waypoint>();
     [SerializeField] [Range(0,5)] float speed = 1;
     void OnEnable()
     {
+        enemyScript = FindObjectOfType<Enemy>();
 
         DrawPath();
         MoveToStart();
@@ -48,6 +50,7 @@ public class PathFinder : MonoBehaviour
 
         }
         gameObject.SetActive(false);
+        enemyScript.Penalty();
 
     }
 }
