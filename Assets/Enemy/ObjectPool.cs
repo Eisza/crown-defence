@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] int poolSize = 3;
-    [SerializeField] int spwanInterval = 2;
+    [SerializeField] [Range(0f,99f)] int poolSize = 3;
+    [SerializeField] [Range(0.1f,30f)] int spwanInterval = 2;
 
     GameObject[] pool;
     // Start is called before the first frame update
