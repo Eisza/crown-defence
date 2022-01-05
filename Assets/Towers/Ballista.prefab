@@ -186,7 +186,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -196,7 +196,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -249,7 +249,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 62.5
+      scalar: 100
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5015,7 +5015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret: {fileID: 6440397992274357977}
   bolts: {fileID: 3235121642364996298}
-  range: 15
+  range: 20
 --- !u!114 &5776360720819667652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5028,3 +5028,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb6d0cd8e6f6984c9896804cb79345a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 75
